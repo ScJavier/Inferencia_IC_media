@@ -22,8 +22,9 @@ server <- function(input, output) {
     
     barras <- round(0.05*input$n) + 10
     
+    par(mar = c(3.1, 3.1, 1, 1))
     densidad <- density(datos)
-    hist(datos, col = 'gray90', breaks = barras, freq = F); box()
+    hist(datos, col = 'gray90', breaks = barras, freq = F, main = ''); box()
     lines(densidad)
     abline(v = input$med, col = 'red3', lwd = 3)
     abline(v = c(Lm, Um), col = 'blue3', lwd = 3, lty = 2)

@@ -1,1 +1,1 @@
-# Inferencia_IC_media
+# Intervalo de confianza para la media
